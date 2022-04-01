@@ -4,12 +4,14 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-const char * ssid = "home_wifi";
-const char * password = "helloworld";
+#define LED_BUILTIN 2
+
+const char * ssid = "RILLA";
+const char * password = "rilla1134";
 
 
 String FirmwareVer = {
-  "2.2"
+  "1.0"
 };
 #define URL_fw_Version "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/bin_version.txt"
 #define URL_fw_Bin "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/fw.bin"
